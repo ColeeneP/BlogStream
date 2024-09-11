@@ -5,6 +5,8 @@ export class Credits {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({
+        type: 'text'
+    })
     content: string;
 }

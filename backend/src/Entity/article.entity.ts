@@ -5,18 +5,29 @@ export class Article {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({
+        type: 'int',
+        unique: false
+    })
     id_user: number;
 
     @Column({ default: new Date() })
     date: Date;
 
-    @Column()
+    @Column({
+        type: 'varchar',
+        length: 50
+    })
     title: string;
 
-    @Column()
+    @Column({
+        type: 'longtext'
+    })
     content: string;
 
-    @Column()
+    @Column({
+        type: 'int',
+        unique: true
+    })
     id_credits: number;
 }
