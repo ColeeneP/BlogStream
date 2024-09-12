@@ -2,7 +2,7 @@ import { Body, Controller, Delete, Get, HttpStatus, Param, Post, Put, Query, Res
 import { Response } from 'express';
 
 import { CreateCreditsDto } from '../DTO/create-credits.dto';
-import { CreditsService } from 'src/services/credits.service';
+import { CreditsService } from 'src/Services/credits.service';
 import { Credits } from 'src/Interfaces/credits.interface';
 
 @Controller('/credits')
