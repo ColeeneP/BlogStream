@@ -2,8 +2,8 @@ import { Body, Controller, Delete, Get, HttpStatus, Param, Post, Put, Query, Res
 import { Response } from 'express';
 
 import { CreateCreditsDto } from '../DTO/create-credits.dto';
-import { CreditsService } from 'src/Services/credits.service';
-import { Credits } from 'src/Interfaces/credits.interface';
+import { CreditsService } from '../Services/credits.service';
+import { Credits } from '../Interfaces/credits.interface';
 
 @Controller('/credits')
 export class CreditsController {
