@@ -1,4 +1,4 @@
-export interface Article {
+export interface User {
     id: number;
     pseudo: string;
     email: string;
