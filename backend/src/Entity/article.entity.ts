@@ -11,7 +11,9 @@ export class Article {
     })
     id_user: number;
 
-    @Column({ default: new Date() })
+    @Column({ 
+        default: new Date() 
+    })
     date: Date;
 
     @Column({
