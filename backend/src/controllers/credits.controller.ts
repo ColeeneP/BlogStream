@@ -10,11 +10,9 @@ export class CreditsController {
     constructor(private creditsService: CreditsService) {}
 
     @Get()
-        async findAll(
-            @Res() res: Response)
-            : Promise<Credits[]> {
-                return this.creditsService.findAll()
-                // await res.status(HttpStatus.OK).json([]);
+        async findAll(@Res() res: Response): Promise<void> {
+            const credits = await this.creditsService.findAll();
+            res.status(HttpStatus.OK).json(credits);
         }
 
     @Get(':id')
